@@ -1,13 +1,15 @@
 Summary:	Game server browsing utility (mostly FPP/FPS)
 Summary(pl):	Przegl±darka serwerów gier (g³ównie FPP/FPS)
 Name:		qstat
-Version:	2.6
+Version:	2.7
 Release:	1
 License:	Artistic
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/qstat/%{name}-%{version}.tar.gz
-# Source0-md5:	68e96ea9dd444ddd7759db02444d398a
+# Source0-md5:	131457c75e831407d1e127306e866181
 URL:		http://www.qstat.org/
+BuildRequires:  autoconf
+BuildRequires:  automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,18 +44,24 @@ Uwaga dotycz±ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
 %setup -q
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
 
-install qstat $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+        DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE.txt CHANGES.txt qstat.cfg contrib.cfg qstatdoc.html template info
+%doc LICENSE.txt CHANGES.txt contrib.cfg qstatdoc.html template/*.{html,txt} info/*.txt
 %attr(755,root,root) %{_bindir}/qstat
+%{_sysconfdir}/qstat.cfg
