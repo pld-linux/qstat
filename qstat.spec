@@ -7,6 +7,7 @@ License:	Artistic
 Group:		Applications/Games
 Source0:	http://www.qstat.org/%{name}25c.tar.gz
 # Source0-md5:	a936dc3e15ece567378a026737fe45e2
+URL:		http://www.qstat.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,7 +35,7 @@ Soldier of Fortune, Rogue Spear, Redline, Turok II, Blood 2,
 Descent 3, Drakan, KISS, Nerf Arena Blast, Rally Master, Terminous,
 Wheel of Time i Daikatana.
 
-Uwga dotycz±ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
+Uwaga dotycz±ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
 (build) 22075 i wy¿szych.
 
 %prep
@@ -45,8 +46,8 @@ Uwga dotycz±ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install qstat $RPM_BUILD_ROOT%{_bindir}
 
 %clean
@@ -54,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(0755, root, root)%{_bindir}/qstat
 %doc LICENSE.txt CHANGES.txt qstat.cfg contrib.cfg qstatdoc.html template info
+%attr(755,root,root) %{_bindir}/qstat
