@@ -1,7 +1,3 @@
-#
-# TODO:
-# - pl desc
-#
 Summary:	Game server browsing utility (mostly FPP/FPS)
 Summary(pl):	Przegl±darka serwerów gier (g³ównie FPP/FPS)
 Name:		qstat
