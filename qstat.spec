@@ -1,12 +1,12 @@
 Summary:	Game server browsing utility (mostly FPP/FPS)
 Summary(pl):	Przegl±darka serwerów gier (g³ównie FPP/FPS)
 Name:		qstat
-Version:	2.5c
+Version:	2.6
 Release:	1
 License:	Artistic
 Group:		Applications/Games
-Source0:	http://www.qstat.org/%{name}25c.tar.gz
-# Source0-md5:	a936dc3e15ece567378a026737fe45e2
+Source0:	http://voxel.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	68e96ea9dd444ddd7759db02444d398a
 URL:		http://www.qstat.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +39,7 @@ Uwaga dotycz±ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
 (build) 22075 i wy¿szych.
 
 %prep
-%setup -q -n %{name}25c
+%setup -q -n %{name}-%{version}
 
 %build
 %{__make}
