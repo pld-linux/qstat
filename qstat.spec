@@ -3,7 +3,7 @@
 # - pl desc
 #
 Summary:	Game server browsing utility (mostly FPP/FPS)
-summary(pl):	PrzeglÄ…darka serwerÃ³w gier (gÅ‚Ã³wnie FPP/FPS)
+summary(pl):	Przegl±darka serwerów gier (g³ównie FPP/FPS)
 Name:		qstat
 Version:	2.5c
 Release:	1
