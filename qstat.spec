@@ -1,12 +1,12 @@
 Summary:	Game server browsing utility (mostly FPP/FPS)
 Summary(pl):	Przegl±darka serwerów gier (g³ównie FPP/FPS)
 Name:		qstat
-Version:	2.10
+Version:	2.11
 Release:	1
 License:	Artistic
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/qstat/%{name}-%{version}.tar.gz
-# Source0-md5:	ac3ce3dbed5248bd5738a4968460880e
+# Source0-md5:	26c09831660ef9049fe74b786b80d091
 URL:		http://www.qstat.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
