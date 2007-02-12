@@ -1,5 +1,5 @@
 Summary:	Game server browsing utility (mostly FPP/FPS)
-Summary(pl):	Przegl±darka serwerów gier (g³ównie FPP/FPS)
+Summary(pl.UTF-8):   PrzeglÄ…darka serwerÃ³w gier (gÅ‚Ã³wnie FPP/FPS)
 Name:		qstat
 Version:	2.11
 Release:	1
@@ -26,8 +26,8 @@ Wheel of Time and Daikatana.
 Note for Tribes 2: qstat only supports Tribes 2 builds numbered 22075
 or higher.
 
-%description -l pl
-qstat jest dzia³aj±cym z linii poleceñ programem pokazuj±cym
+%description -l pl.UTF-8
+qstat jest dziaÅ‚ajÄ…cym z linii poleceÅ„ programem pokazujÄ…cym
 informacje o internetowych serwerach gier.
 
 Posiada on wsparcie m. in. dla gier: Quake, QuakeWorld, Hexen II,
@@ -37,8 +37,8 @@ Soldier of Fortune, Rogue Spear, Redline, Turok II, Blood 2,
 Descent 3, Drakan, KISS, Nerf Arena Blast, Rally Master, Terminous,
 Wheel of Time i Daikatana.
 
-Uwaga dotycz±ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
-(build) 22075 i wy¿szych.
+Uwaga dotyczÄ…ca Tribes 2: qstat wspiera jedynie Tribes 2 w wersji
+(build) 22075 i wyÅ¼szych.
 
 %prep
 %setup -q
